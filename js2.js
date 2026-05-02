@@ -87,9 +87,19 @@ console.log(
 );
 console.log("                                                                    bolo davaleba tomebi");
 const tomi = [
-  { title: "The Lord of the Rings: The Fellowship of the Ring", author: "J.R.R. Tolkien", yearpublished: 1954 },
-  { title: "The Lord of the Rings: The Two Towers", author: "J.R.R. Tolkien", yearpublished: 1954 },
-  { title: "The Lord of the Rings: The Return of the King", author: "J.R.R. Tolkien", yearpublished: 1955 },
+  {
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    author: "J.R.R. Tolkien",
+    yearpublished: 1954,
+    ragac: 7 / 16,
+  },
+  { title: "The Lord of the Rings: The Two Towers", author: "J.R.R. Tolkien", yearpublished: 1954, ragac: null },
+  {
+    title: "The Lord of the Rings: The Return of the King",
+    author: "J.R.R. Tolkien",
+    yearpublished: 1955,
+    ragac: "8 / 16",
+  },
 ];
 console.log(
   "პირველი წიგნი არის: " +
@@ -97,13 +107,29 @@ console.log(
     " ავტორი: " +
     tomi[0].author +
     " გამოყენებული წელი: " +
-    tomi[0].yearpublished,
+    tomi[0].yearpublished +
+    " რაგაც: " +
+    tomi[0].ragac,
 );
 console.log(
-  "მეორე წიგნი არის: " + tomi[1].title + " ავტორი: " + tomi[1].author + " გამოყენებული წელი: " + tomi[1].yearpublished,
+  "მეორე წიგნი არის: " +
+    tomi[1].title +
+    " ავტორი: " +
+    tomi[1].author +
+    " გამოყენებული წელი: " +
+    tomi[1].yearpublished +
+    " რაგაც: " +
+    tomi[1].ragac,
 );
 console.log(
-  "მესამე წიგნი არის: " + tomi[2].title + " ავტორი: " + tomi[2].author + " გამოყენებული წელი: " + tomi[2].yearpublished,
+  "მესამე წიგნი არის: " +
+    tomi[2].title +
+    " ავტორი: " +
+    tomi[2].author +
+    " გამოყენებული წელი: " +
+    tomi[2].yearpublished +
+    " რაგაც: " +
+    tomi[2].ragac,
 );
 console.log("            igive ");
 if (tomi.length > 0) {
@@ -116,7 +142,9 @@ if (tomi.length > 0) {
         " ავტორი: " +
         tomi[i].author +
         " გამოყენებული წელი: " +
-        tomi[i].yearpublished,
+        tomi[i].yearpublished +
+        " რაგაც: " +
+        tomi[i].ragac,
     );
   }
   console.log("შემდეგი ნაწილი არარის გამოსული");
